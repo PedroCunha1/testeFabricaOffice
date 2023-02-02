@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/css/style.css">
+    <title>Tela 2 - Cadastro Cliente</title>
+</head>
+<body>
+    <h1>Cadastro Clientes</h1>
+    <div class="box">
+    <form action="" id="form">
+        <fieldset>
+            <legend><b>Cadastro Cliente</b></legend>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="nome" id="nomeCliente" class="inputUser" required>
+                <label for="nome" class="labelInput">Nome Completo</label>
+                <span class="spanRequired">Nome deve ter no mínimo 3 caracteres!</span>
+            </div>
+            <br>
+            <br>
+            <div class="inputBox">
+                <input type="tel" name="telefone" id="telefoneCliente" maxlength="15" class="inputUser" onkeyup="handlePhone(event)" required>
+                <label for="telefone" class="labelInput">Telefone</label>
+                <span class="spanRequired">Digite um telefone válido!</span>
+            </div>
+            <br>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="email" id="emailCliente" class="inputUser" required>
+                <label for="email" class="labelInput">Email</label>
+                <span class="spanRequired">Por favor digite um email válido</span>
+            </div>
+            <br>
+            <br>
+                <label for="dataNascimento">Data de Nascimento</label>
+                <input type="date" name="dataNascimento" id="dataNascimento" required>
+                
+            <br>
+            <br>
+            <br>
+            <div class="inputBox">
+                <input type="number" name="cep" id="cep" class="inputUser" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                maxlength = "8" required>
+                <label for="cep" class="labelInput">CEP</label>
+                <span class="spanRequired">CEP não encontrado</span>
+                
+            </div>
+                <br>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                <label for="cidade" class="labelInput">Cidade</label>
+                
+            </div>
+            <br>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="estado" id="estado" class="inputUser" required>
+                <label for="estado" class="labelInput">Estado</label>
+                
+            </div>
+            <br>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="logradouro" id="logradouro" class="inputUser" required>
+                <label for="logradouro" class="labelInput">Logradouro</label>
+            </div>
+            <br>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="bairro" id="bairro" class="inputUser" required>
+                <label for="bairro" class="labelInput">Bairro</label>
+            </div>
+                <br>
+                <br>
+                <div class="inputBox">
+                <input type="number" name="numeroResidencia" id="numeroResidencia" class="inputUser" required>
+                <label for="numeroResidencia" class="labelInput">Número</label>
+            </div>
+            <br>
+            <br>
+                <input type="submit" name="submit" id="submit" value="Salvar">
+        </fieldset>
+    </form>
+</div>
+<script src="tela2.js"></script> 
+    
+</body>
+</html>

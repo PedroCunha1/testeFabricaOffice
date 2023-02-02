@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela 1 - Lista Clientes</title>
+    <script src="tela1.js"></script> 
+    <link rel="stylesheet" href="assets/style/css/style.css">
+</head>
+<body>
+    <h1>Lista Clientes</h1>
+    <button class="button-14" role="button" onclick="window.location='tela2.html'">CADASTRO CLIENTES</button>
+    <br>
+    <br>
+    <div id="tabela">
+        <table border="3">
+            <thead>
+              <td class="header">Código Cliente</td>
+              <td class="header">Nome</td>
+              <td class="header">Telefone</td>
+              <td class="header">Email</td>
+              <td class="header">Opções</td>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="dadosCliente1" id="codCliente1">1</td>
+                <td class="dadosCliente1" id="nomeCliente1">Pedro Cunha</td>
+                <td class="dadosCliente1" id="telefoneCliente1">(37) 99839-8067</td>
+                <td class="dadosCliente1" id="emailCliente1">cunha.pedru1@gmail.com</td>
+                <td class="dadosCliente1" id="opçoesCliente1"><button class="button-13" role="button" onclick="window.location='tela3.html'">
+                    Editar Cliente</button><button class="button-13" role="button">Excluir Cliente</button></td>
+              </tr>
+            </tbody>
+    </div>
+</body>
+</html>
